@@ -1,2 +1,7 @@
 # AONB_downloader
-This Python script automates the process of downloading images from Arkhangelsk Regional Scientific Library and compiling them into a PDF document.
+Скрипт адаптирован под специфику хранения сканов книг в Архангельской областной научной библиотеки им. Н. А. Добролюбова. Он сохраняет изображения по указанному URL и формирует из них PDF-документ.
+
+Параметр `base_url` указывается на основе URL, по которому хранятся отдельные сканы страниц книги на сайте библиотеки. URL можно уточнить через dev-tool браузера.
+В `range` указываем число страниц в книге.
+
+Для решения возможных проблем с сертификатами используется библиотека `certifi`. В случае проблем см. решения на [StackOverflow](https://stackoverflow.com/questions/51925384/unable-to-get-local-issuer-certificate-when-using-requests).
